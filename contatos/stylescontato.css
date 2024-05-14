@@ -8,7 +8,13 @@
     font-style: normal;
     scroll-behavior: smooth;
 }
-
+*::selection{
+    color: white;
+    background-color: #ac823f89;
+}
+body{
+    background-color: #051119;
+}
 header {
     position: sticky;
     top: 0;
@@ -107,4 +113,83 @@ header {
 gmp-map {
     width: 100%;
     height: 100%;
+}
+.espacoContatos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-left: 30px;
+    color: white;
+    gap: 20px;
+}
+.espacoContatos h1{
+    font-size: 32px;
+}
+.contatoLink{
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.7s;
+}
+hr{
+    height: 2px;
+    border: none;
+    background-color: #ac823f;
+}
+.contatoLink:hover{
+    color: #ac823fb0;
+    opacity: 0.7;
+}
+@media(max-width:960px){
+    .espacoContatos{
+        margin-top: 10%;
+    }
+}
+@media(max-width:770px){
+    .section-dos-contatos{
+        flex-direction: column;
+    }
+    .mapa{
+        width: 100%;
+    }
+    body{
+        height: 900px;
+    }
+}
+@media(max-width:650px){
+    #logoID{
+        font-size: 20px;
+    }
+    .navContent{
+        font-size: 14px;
+    }
+}
+@media(max-width:500px){
+    #logoID{
+        font-size: 14px;
+    }
+    .navContent{
+        font-size: 12px;
+    }
+    .listaNav ul{
+        gap: 15px;
+    }
+}
+@media(max-width:370px){
+    #logoID{
+        font-size: 12px;
+    }
+    .navContent{
+        font-size: 10px;
+    }
+}
+@media(max-width:315px){
+    #logoID{
+        font-size: 10px;
+    }
+    .navContent{
+        font-size: 8px;
+    }
 }
